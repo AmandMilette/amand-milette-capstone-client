@@ -6,7 +6,7 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import "./App.css";
+import "./App.scss";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,33 +17,19 @@ function App() {
         <Header />
         <div className="main__container">
           <Routes>
-            <Route path="/" element={<Navigate to="/warehouses" />} />
-            <Route path="/warehouses" element={<>ToDo:EditInventoryPage</>} />
+            <Route path="/" element={<Navigate to="/bookings" />} />
+            <Route path="/bookings" element={<>ToDo:BookingsPage</>} />
             <Route
-              path="/warehouses/:id"
-              element={<>ToDo:EditInventoryPage</>}
+              path="/bookings/:id"
+              element={<>ToDo:BookingsDetailsPage</>}
             />
-            <Route
-              path="/warehouses/:id/edit"
-              element={<>ToDo:EditInventoryPage</>}
-            />
-            <Route
-              path="/warehouses/add"
-              element={<>ToDo:EditInventoryPage</>}
-            />
-            <Route path="/inventory" element={<>ToDo:EditInventoryPage</>} />
-            <Route
-              path="/inventory/:id"
-              element={<>ToDo:EditInventoryPage</>}
-            />
-            <Route
-              path="/inventory/:id/edit"
-              element={<>ToDo:EditInventoryPage</>}
-            />
-            <Route
-              path="/inventory/add"
-              element={<>ToDo:EditInventoryPage</>}
-            />
+            {/* <Route
+              path="/bookings/:id/edit"
+              element={<>ToDo:EditBookingsPage</>}
+            /> nice to have */}
+            <Route path="/bookings/add" element={<>ToDo:AddBookingsPage</>} />
+            <Route path="/about" element={<>ToDo:AboutPage</>} />
+
             <Route path="*" element={<h1>404 NOT FOUND</h1>} />
           </Routes>
         </div>
