@@ -1,16 +1,14 @@
-import { useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
 } from "react-router-dom";
+import BookingsPage from "./pages/BookingsPage/BookingsPage";
 
 import "./App.scss";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Router>
@@ -18,7 +16,7 @@ function App() {
         <div className="main__container">
           <Routes>
             <Route path="/" element={<Navigate to="/bookings" />} />
-            <Route path="/bookings" element={<>ToDo:BookingsPage</>} />
+            <Route path="/bookings" element={<BookingsPage />} />
             <Route
               path="/bookings/:id"
               element={<>ToDo:BookingsDetailsPage</>}
