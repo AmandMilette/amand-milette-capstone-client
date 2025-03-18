@@ -6,13 +6,12 @@ import {
 } from "react-router-dom";
 import BookingsPage from "./pages/BookingsPage/BookingsPage";
 
-import "./App.scss";
+import "../src/App.scss";
 
 function App() {
   return (
     <>
       <Router>
-        <Header />
         <div className="main__container">
           <Routes>
             <Route path="/" element={<Navigate to="/bookings" />} />
@@ -31,7 +30,6 @@ function App() {
             <Route path="*" element={<h1>404 NOT FOUND</h1>} />
           </Routes>
         </div>
-        <Footer />
       </Router>
     </>
   );

@@ -8,7 +8,6 @@ function BookingsPage() {
   return (
     <>
       <NavBar />
-      <h1>Testing </h1>
     </>
   );
 }

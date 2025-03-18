@@ -24,6 +24,14 @@
     justify-items: flex-start;
     justify-content: space-around;
   }
+  &__logo {
+    width: 100%;
+    margin: 1rem 2rem 1rem 2rem;
+    color: #f1ddbd;
+    font-family: "Nunito";
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
   &__bookings,
   &__about {
     text-decoration: none;
@@ -41,11 +49,13 @@
     @include desktop {
       margin: 1rem 7rem 1rem 7rem;
     }
+    &:active,
     &:active {
       color: #f1ddbd;
       font-weight: 700;
       border-bottom: #f1ddbd solid 0.2rem;
     }
+    &:hover,
     &:hover {
       color: #f1ddbd;
       border-bottom: #f1ddbd solid 0.2rem;
