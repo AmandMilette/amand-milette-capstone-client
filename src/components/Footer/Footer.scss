@@ -1,0 +1,87 @@
+@use "/src/styles/partials/global" as *;
+@use "/src/styles/partials/variables" as *;
+@use "/src/styles/partials/mixins" as *;
+
+#root {
+  height: 100vh;
+}
+
+/* navbar section */
+.navbar {
+  background-color: #34180d;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @include tablet {
+    align-items: flex-start;
+    justify-items: flex-start;
+    justify-content: space-around;
+  }
+
+  @include desktop {
+    align-items: flex-start;
+    justify-items: flex-start;
+    justify-content: space-around;
+  }
+  &__logo {
+    width: 100%;
+    margin: 1rem 2rem 1rem 2rem;
+    color: #f1ddbd;
+    font-family: "Nunito";
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  &__bookings,
+  &__about {
+    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: 400;
+    color: #f1ddbd;
+    font-size: 0.875rem;
+    margin: 1rem 2rem 1rem 2rem;
+    text-align: center;
+    align-self: flex-end;
+    justify-content: space-evenly;
+    @include tablet {
+      margin: 1rem;
+    }
+    @include desktop {
+      margin: 1rem 7rem 1rem 7rem;
+    }
+    &:active,
+    &:active {
+      color: #f1ddbd;
+      font-weight: 700;
+      border-bottom: #f1ddbd solid 0.2rem;
+    }
+    &:hover,
+    &:hover {
+      color: #f1ddbd;
+      border-bottom: #f1ddbd solid 0.2rem;
+    }
+  }
+}
+
+// .navbar__logo {
+//   margin: 1rem 3rem 1rem 3rem;
+//   align-self: center;
+//   align-content: center;
+//   justify-content: space-between;
+// }
+// @media (min-width: 768px) {
+//   .navbar__logo {
+//     align-self: flex-start;
+//     align-items: flex-start;
+//     margin: 1rem;
+//     justify-content: flex-start;
+//   }
+// }
+// @media (min-width: 1280px) {
+//   .navbar__logo {
+//     align-self: flex-start;
+//     align-items: flex-start;
+//     margin: 1rem 5rem 1rem 5rem;
+//     justify-content: flex-start;
+//   }
+// }
