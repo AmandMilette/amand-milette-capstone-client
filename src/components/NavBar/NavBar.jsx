@@ -7,7 +7,7 @@ function NavBar() {
     <>
       <nav className="navbar">
         <Link to="/">
-          <p className="navbar__logo">Tranquil Paws</p>
+          <p className="navbar__logo">Comfort Companions Pet Care</p>
         </Link>
         <Link to="/bookings">
           <p className="navbar__bookings">Bookings</p>
