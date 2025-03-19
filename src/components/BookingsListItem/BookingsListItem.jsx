@@ -1,11 +1,10 @@
 // import { Link } from "react-router-dom";
 import { useState } from "react";
 
-import "./BookingsList.scss";
+import "./BookingsListItem.scss";
 import bookingsData from "../../data/bookingsData";
-import bookingsListItem from "../BookingsListItem/BookingsListItem";
 
-function BookingsList() {
+function bookingsListItem() {
   //get API functionality for bookings list from form and database
   const [bookings, setBookings] = useState(bookingsData);
   console.log(bookings);
@@ -22,4 +21,4 @@ function BookingsList() {
   );
 }
 
-export default BookingsList;
+export default bookingsListItem;
