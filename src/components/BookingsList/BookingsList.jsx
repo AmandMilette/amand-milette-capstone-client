@@ -1,11 +1,22 @@
 // import { Link } from "react-router-dom";
+import { useState } from "react";
 
 import "./BookingsList.scss";
+import bookingsData from "../../data/bookingsData";
 
 function BookingsList() {
+  //get API functionality for bookings list from form and database
+  const [bookings, setBookings] = useState(bookingsData);
+  console.log(bookings);
   return (
     <>
-      <h1>Testing</h1>
+      <ul>
+        {bookings.map((booking) => (
+          <li key={booking.id}>
+            <p>{booking.pet_name}</p>
+          </li>
+        ))}
+      </ul>
     </>
   );
 }
