@@ -6,6 +6,10 @@
   border-top: 3px solid $solid-pink;
   &__description {
     color: $brown-pod;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+    font-family: "Roboto";
   }
 }
 
@@ -14,11 +18,17 @@
   justify-content: space-between;
   &__date {
     color: $brown-pod;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
     font-weight: 700;
+    font-family: "Roboto";
   }
   &__name {
     color: $solid-pink;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
     font-weight: 700;
+    font-family: "Roboto";
   }
 }
 
