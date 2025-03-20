@@ -13,12 +13,14 @@ function NavBar() {
             alt="Comfort Companions Pet Care logo"
           />
         </Link>
-        <Link to="/bookings">
-          <p className="navbar__bookings">Bookings</p>
-        </Link>
-        <Link to="/about">
-          <p className="navbar__about">About</p>
-        </Link>
+        <div className="page-links">
+          <Link to="/bookings" className="page-links__link">
+            <p>Bookings</p>
+          </Link>
+          <Link to="/about" className="page-links__link">
+            <p>About</p>
+          </Link>
+        </div>
       </nav>
     </>
   );

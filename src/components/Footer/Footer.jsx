@@ -5,15 +5,15 @@ import "./Footer.scss";
 function Footer() {
   return (
     <>
-      <nav className="navbar">
+      <nav className="footer-navbar">
         <Link to="/">
-          <p className="navbar__logo">Comfort Companions Pet Care</p>
+          <p className="footer-navbar__logo">Comfort Companions Pet Care</p>
         </Link>
         <Link to="/bookings">
-          <p className="navbar__bookings">Bookings</p>
+          <p className="footer-navbar__bookings">Bookings</p>
         </Link>
         <Link to="/about">
-          <p className="navbar__about">About</p>
+          <p className="footer-navbar__about">About</p>
         </Link>
       </nav>
     </>

@@ -1,6 +1,26 @@
-@use "/src/styles/partials/global" as *;
 @use "/src/styles/partials/variables" as *;
 @use "/src/styles/partials/mixins" as *;
+
+.booking-list-item {
+  padding: 1rem;
+  border-top: 3px solid $solid-pink;
+  &__description {
+    color: $brown-pod;
+  }
+}
+
+.item-heading {
+  display: flex;
+  justify-content: space-between;
+  &__date {
+    color: $brown-pod;
+    font-weight: 700;
+  }
+  &__name {
+    color: $solid-pink;
+    font-weight: 700;
+  }
+}
 
 // .comments__list {
 //   display: flex;

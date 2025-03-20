@@ -1,7 +1,6 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import axios from "axios";
 import { useState } from "react";
-// import { Link } from "react-router-dom";
 import "./BookingsList.scss";
 import bookingsData from "../../data/bookingsData";
 import BookingsListItem from "../BookingsListItem/BookingsListItem";
@@ -12,14 +11,16 @@ function BookingsList() {
   console.log(bookings);
   return (
     <>
-      <ul>
+      <ul className="booking-list">
         {bookings.map((booking) => (
-          <li key={booking.id}>
-            <p>{booking.pet_name}</p>
-            <p>{booking.description}</p>
-          </li>
+          <Link to={``} key={booking.id}>
+            <BookingsListItem booking={booking} />
+          </Link>
         ))}
       </ul>
+      <Link to={``} className="create-booking-button">
+        <p className="create-booking-button__text">Create a Booking</p>
+      </Link>
     </>
   );
 }

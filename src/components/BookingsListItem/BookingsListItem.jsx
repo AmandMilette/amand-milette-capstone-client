@@ -5,12 +5,17 @@ import "./BookingsListItem.scss";
 function BookingsListItem({ booking }) {
   //get API functionality for bookings list from form and database
 
-  console.log(bookings);
   return (
     <>
-      <div className="booking">
-        <div className="booking_petname">{booking.pet_name}</div>
-      </div>
+      <li className="booking-list-item">
+        <div className="item-heading">
+          <p className="item-heading__date">
+            {new Date(booking.timestamp).toLocaleDateString("en-US")}
+          </p>
+          <p className="item-heading__name">{booking.pet_name}</p>
+        </div>
+        <p className="booking-list-item__description">{booking.description}</p>
+      </li>
     </>
   );
 }

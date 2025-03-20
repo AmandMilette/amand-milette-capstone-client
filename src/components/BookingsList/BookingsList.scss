@@ -1,6 +1,21 @@
-@use "/src/styles/partials/global" as *;
 @use "/src/styles/partials/variables" as *;
 @use "/src/styles/partials/mixins" as *;
+
+.booking-list {
+  padding: 1rem 0;
+}
+
+.create-booking-button {
+  display: flex;
+  justify-content: center;
+
+  &__text {
+    color: $dutch-white;
+    background-color: $astral;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+}
 
 // .comments__list {
 //   display: flex;

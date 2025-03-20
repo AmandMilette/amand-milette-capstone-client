@@ -10,8 +10,10 @@ function BookingsPage() {
   return (
     <>
       <NavBar />
-      <h1>BookingsList Component</h1>
-      <BookingsList />
+      <main className="main-content">
+        <h1>Active Bookings</h1>
+        <BookingsList />
+      </main>
       <Footer />
     </>
   );
