@@ -25,12 +25,7 @@
     justify-content: space-around;
   }
   &__logo {
-    width: 100%;
-    margin: 1rem 2rem 1rem 2rem;
-    color: #f1ddbd;
-    font-family: "Nunito";
-    font-size: 1.5rem;
-    font-weight: 700;
+    // margin: 1rem 2rem 1rem 2rem;
   }
   &__bookings,
   &__about {
@@ -62,7 +57,9 @@
     }
   }
 }
-
+img {
+  max-width: 100%;
+}
 // .navbar__logo {
 //   margin: 1rem 3rem 1rem 3rem;
 //   align-self: center;

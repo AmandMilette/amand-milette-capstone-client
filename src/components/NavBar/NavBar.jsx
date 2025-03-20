@@ -7,7 +7,11 @@ function NavBar() {
     <>
       <nav className="navbar">
         <Link to="/">
-          <p className="navbar__logo">Comfort Companions Pet Care</p>
+          <img
+            className="navbar__logo"
+            src="/src/assets/icons/Comfort Companions Logo light.svg"
+            alt="Comfort Companions Pet Care logo"
+          />
         </Link>
         <Link to="/bookings">
           <p className="navbar__bookings">Bookings</p>
