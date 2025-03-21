@@ -5,17 +5,39 @@ import "./Footer.scss";
 function Footer() {
   return (
     <>
-      <nav className="footer-navbar">
+      <footer className="footer-navbar">
         <Link to="/">
-          <p className="footer-navbar__logo">Comfort Companions Pet Care</p>
+          <img
+            className="footer-navbar__logo"
+            src="/src/assets/logos/Comfort Companions Logo light.svg"
+            alt="Comfort Companions Pet Care logo"
+          />
         </Link>
-        <Link to="/bookings">
-          <p className="footer-navbar__bookings">Bookings</p>
-        </Link>
-        <Link to="/about">
-          <p className="footer-navbar__about">About</p>
-        </Link>
-      </nav>
+
+        <section className="footer__social">
+          <img
+            className="foot__social--facebook"
+            src="/src/assets/logos/Facebook.svg"
+            alt="Facebook logo"
+          />
+          <img
+            className="foot__social--twitter"
+            src="/src/assets/logos/X_twitter.svg"
+            alt="Twitter logo"
+          />
+          <img
+            className="foot__social--instagram"
+            src="/src/assets/logos/Instagram.svg"
+            alt="Instagram logo"
+          />
+        </section>
+        <section className="footer__copyright">
+          <p>© 2024 Snaps</p>
+          <p>Terms</p>
+          <p>Privacy</p>
+          <p>Cookies</p>
+        </section>
+      </footer>
     </>
   );
 }

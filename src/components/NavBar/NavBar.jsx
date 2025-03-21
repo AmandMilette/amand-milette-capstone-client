@@ -9,7 +9,7 @@ function NavBar() {
         <Link to="/">
           <img
             className="navbar__logo"
-            src="/src/assets/icons/Comfort Companions Logo light.svg"
+            src="/src/assets/logos/Comfort Companions Logo light.svg"
             alt="Comfort Companions Pet Care logo"
           />
         </Link>
