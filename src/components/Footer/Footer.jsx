@@ -16,17 +16,17 @@ function Footer() {
 
         <section className="footer__social">
           <img
-            className="foot__social--facebook"
+            className="footer__social--facebook"
             src="/src/assets/logos/Facebook.svg"
             alt="Facebook logo"
           />
           <img
-            className="foot__social--twitter"
+            className="footer__social--twitter"
             src="/src/assets/logos/X_twitter.svg"
             alt="Twitter logo"
           />
           <img
-            className="foot__social--instagram"
+            className="footer__social--instagram"
             src="/src/assets/logos/Instagram.svg"
             alt="Instagram logo"
           />

@@ -24,44 +24,13 @@
     justify-content: space-around;
   }
   &__logo {
-    width: 100%;
-    margin: 1rem 2rem 1rem 2rem;
-    color: #f1ddbd;
-    font-family: "Nunito";
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
-  &__bookings,
-  &__about {
-    text-decoration: none;
-    font-family: "Roboto";
-    font-weight: 400;
-    color: #f1ddbd;
-    font-size: 0.875rem;
-    margin: 1rem 2rem 1rem 2rem;
-    text-align: center;
-    align-self: flex-end;
-    justify-content: space-evenly;
-    @include tablet {
-      margin: 1rem;
-    }
-    @include desktop {
-      margin: 1rem 7rem 1rem 7rem;
-    }
-    &:active,
-    &:active {
-      color: #f1ddbd;
-      font-weight: 700;
-      border-bottom: #f1ddbd solid 0.2rem;
-    }
-    &:hover,
-    &:hover {
-      color: #f1ddbd;
-      border-bottom: #f1ddbd solid 0.2rem;
-    }
+    margin: 2rem 0 1rem 0;
+    width: 9rem;
   }
 }
-
+.footer__social {
+  color: $astral;
+}
 // .footer {
 //   background-color: #effaf7;
 //   display: flex;
