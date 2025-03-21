@@ -1,6 +1,8 @@
 import "./Form.scss";
 import { useState } from "react";
-
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+const API_URL = import.meta.env.VITE_API_URL;
 function Form() {
   const [petName, setPetName] = useState("");
   const [ownerName, setOwnerName] = useState("");
@@ -8,6 +10,7 @@ function Form() {
   const [petType, setPetType] = useState("");
   const [timestamp, setTimestamp] = useState("");
   const [category, setCategory] = useState("");
+  const navigate = useNavigate();
 
   function handlePetNameChange(e) {
     setPetName(e.target.value);
@@ -28,7 +31,15 @@ function Form() {
     setCategory(e.target.value);
   }
 
-  function handleSubmit(e) {
+  async function postBooking(newBooking) {
+    try {
+      const response = await axios.post(`${API_URL}/bookings`, newBooking);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  async function handleSubmit(e) {
     e.preventDefault();
 
     if (
@@ -44,15 +55,16 @@ function Form() {
     }
 
     const booking = {
-      petName,
-      ownerName,
-      description,
-      petType,
-      timestamp: new Date(timestamp).getTime(),
-      category,
+      pet_name: petName,
+      owner_name: ownerName,
+      description: description,
+      pet_type: petType,
+      timestamp: timestamp,
+      category: category,
     };
-    console.log(booking);
+    await postBooking(booking);
     alert("Submitted");
+    navigate("/bookings");
   }
   return (
     <>
@@ -80,8 +92,14 @@ function Form() {
             placeholder="Enter pet care instructions"
             value={description}
             onChange={handleDescriptionChange}
+            className="booking-form__text"
           />
-          <select name="pet_type" required onChange={handlePetTypeChange}>
+          <select
+            name="pet_type"
+            required
+            onChange={handlePetTypeChange}
+            className="booking-form__text"
+          >
             <option value="" disabled selected>
               Select a pet type
             </option>
@@ -93,8 +111,14 @@ function Form() {
             name="timestamp"
             value={timestamp}
             onChange={handleTimestampChange}
+            className="booking-form__text"
           ></input>
-          <select name="category" required onChange={handleCategoryChange}>
+          <select
+            name="category"
+            required
+            onChange={handleCategoryChange}
+            className="booking-form__text"
+          >
             <option value="" disabled selected>
               Select a service
             </option>
