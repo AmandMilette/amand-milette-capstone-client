@@ -1,0 +1,7 @@
+@use "/src/styles/partials/variables" as *;
+@use "/src/styles/partials/mixins" as *;
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+}

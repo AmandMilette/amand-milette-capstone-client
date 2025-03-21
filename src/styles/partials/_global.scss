@@ -61,3 +61,12 @@ a {
 ul {
   list-style-type: none;
 }
+
+textarea {
+  font-family: inherit;
+  field-sizing: content;
+}
+
+input[type="date"] {
+  font-family: inherit;
+}

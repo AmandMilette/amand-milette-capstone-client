@@ -18,7 +18,7 @@ function BookingsList() {
           </Link>
         ))}
       </ul>
-      <Link to={``} className="create-booking-button">
+      <Link to={"/bookings/add"} className="create-booking-button">
         <p className="create-booking-button__text">Create a Booking</p>
       </Link>
     </>

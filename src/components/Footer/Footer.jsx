@@ -14,24 +14,24 @@ function Footer() {
           />
         </Link>
 
-        <section className="footer__social">
+        <section className="footer-navbar__social">
           <img
-            className="footer__social--facebook"
+            className="footer-navbar__social--facebook"
             src="/src/assets/logos/Facebook.svg"
             alt="Facebook logo"
           />
           <img
-            className="footer__social--twitter"
+            className="footer-navbar__social--twitter"
             src="/src/assets/logos/X_twitter.svg"
             alt="Twitter logo"
           />
           <img
-            className="footer__social--instagram"
+            className="footer-navbar__social--instagram"
             src="/src/assets/logos/Instagram.svg"
             alt="Instagram logo"
           />
         </section>
-        <section className="footer__copyright">
+        <section className="footer-navbar__copyright">
           <p>© 2024 Snaps</p>
           <p>Terms</p>
           <p>Privacy</p>

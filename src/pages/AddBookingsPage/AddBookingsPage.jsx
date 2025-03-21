@@ -1,18 +1,15 @@
 // import { useState } from "react";
 
-import NavBar from "../../components/NavBar/NavBar";
-import Footer from "../../components/Footer/Footer";
-
 import "./AddBookingsPage.scss";
+import Form from "../../components/Form/Form";
 
 function AddBookingsPage() {
   return (
     <>
-      <NavBar />
-      <main className="add-main-content">
-        <h1>Create A Booking</h1>
+      <main className="booking-main-content">
+        <h1 className="booking-main-content-title">Add a Booking</h1>
+        <Form />
       </main>
-      <Footer />
     </>
   );
 }
