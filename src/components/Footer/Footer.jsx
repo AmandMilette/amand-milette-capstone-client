@@ -7,11 +7,7 @@ function Footer() {
     <>
       <footer className="footer-navbar">
         <Link to="/">
-          <img
-            className="footer-navbar__logo"
-            src="/src/assets/logos/Comfort Companions Logo light.svg"
-            alt="Comfort Companions Pet Care logo"
-          />
+          <h2 className="footer-navbar__title">Contact</h2>
         </Link>
 
         <section className="footer-navbar__social">

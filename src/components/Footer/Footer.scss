@@ -10,8 +10,10 @@
   background-color: #34180d;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
   @include tablet {
     align-items: flex-start;
     justify-items: flex-start;
@@ -23,30 +25,32 @@
     justify-items: flex-start;
     justify-content: space-around;
   }
-  &__logo {
-    margin: 2rem 0 1rem 0;
-    width: 9rem;
+  &__title {
+    flex: 1;
+    font-family: "Nunito";
+    color: $dutch-white;
   }
 
   &__social {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
-    width: 4rem;
-    margin: 0.5rem 0 0.5rem 0;
+    justify-items: flex-start;
+    width: 8rem;
+
     @include tablet {
       width: 20rem;
       margin: 1rem;
       justify-content: space-between;
       flex: 1;
     }
-    &__social--facebook,
-    &__social--twitter,
-    &__social--instagram,
-    &__social--pinterest {
-      width: 0.5rem;
+    &--facebook,
+    &--twitter,
+    &--instagram {
+      width: 2rem;
+      align-content: space-between;
     }
     @include tablet {
       width: 1rem;
