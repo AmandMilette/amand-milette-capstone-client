@@ -6,11 +6,13 @@ function AboutPage() {
   return (
     <>
       <main className="about-main-content">
-        <h1>About</h1>
-        <section>
-          <h2>Cozy Care For All Dogs & Cats</h2>
-          <h3>Pet Care Experience</h3>
-          <p>
+        <h1 className="about-main-content__page-title">About</h1>
+        <section className="experience-section">
+          <h2 className="experience-section__title">
+            Cozy Care For All Dogs & Cats
+          </h2>
+          <h3 className="experience-section__subtitle">Pet Care Experience</h3>
+          <p className="experience-section__body">
             Hello, I'm Amand (they/them). I have grown up with dogs my entire
             life, and I started taking more of a direct role in taking care of
             the family dogs over the years when I was 10 years old. I have
@@ -19,15 +21,17 @@ function AboutPage() {
             doggy daycare, drop-in visit, and house-sitting services for many
             family members and friends over the years.
           </p>
-          <p>
+          <p className="experience-section__body">
             I also have 1 year of experience in taking care of cats. I have an
             equal love of cats and dogs in my heart to provide the best care for
             every pet. I have experience with taking care of single-cat and
             multiple-cat households. I have provided drop-in and house-sitting
             services to many of my cat-owning friends.
           </p>
-          <h3>Safety, Trust & Environment</h3>
-          <p>
+          <h3 className="experience-section__subtitle">
+            Safety, Trust & Environment
+          </h3>
+          <p className="experience-section__body">
             I live in a pet-friendly apartment building a short distance away
             from multiple parks & walking trails. There is a small grass area
             beside the main entrance of my building where I can easily take dogs
@@ -40,21 +44,21 @@ function AboutPage() {
             messes, and minor grooming maintenance if requested as part of my
             services.
           </p>
-          <p>
+          <p className="experience-section__body">
             For dog boarding, Doggy Daycare, house-sitting and drop in services
             I am able to accept clients of multiple pet households.
           </p>
-          <p>
+          <p className="experience-section__body">
             Please let me know if your precious pet has any special needs
             (physical, behavioral, etc.) in order for me to properly accommodate
             them and to provide the highest quality of care with my services.
           </p>
         </section>
-        <section>
-          <h2>Reviews</h2>
-          <h3>Claire R.</h3>
-          <p>Jan 31, 2024</p>
-          <p>
+        <section className="review-section">
+          <h2 className="review-section__title">Reviews</h2>
+          <h3 className="review-section__subtitle">Claire R.</h3>
+          <p className="review-section__body--date">Jan 31, 2024</p>
+          <p className="review-section__body">
             Amand was kind enough to look after my cats, Baby and Charlie for
             three months while my husband and I were on an extended vacation. We
             were introduced to Amand through a friend, and Amand was very prompt
@@ -66,9 +70,9 @@ function AboutPage() {
             recommend Amand to anyone looking to have a caring and dependable
             caregiver for their pets!
           </p>
-          <h3>Jessica M.</h3>
-          <p>Jan 30, 2024</p>
-          <p>
+          <h3 className="review-section__subtitle">Jessica M.</h3>
+          <p className="review-section__body--date">Jan 30, 2024</p>
+          <p className="review-section__body">
             Amand is a passionate pet lover, having had mixed breed dogs (small
             and medium) growing up and into adulthood. Amand in addition to
             walking your pet can assist in paw care, bathing, feeding, cleaning,

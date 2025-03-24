@@ -1,2 +1,77 @@
 @use "/src/styles/partials/variables" as *;
 @use "/src/styles/partials/mixins" as *;
+
+.about-main-content {
+  padding: 1rem;
+  &__page-title {
+    color: $brown-pod;
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.experience-section {
+  padding-top: 1rem;
+
+  &__title {
+    color: $brown-pod;
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  &__subtitle {
+    padding: 0.5rem 0;
+    color: $brown-pod;
+    font-family: "Nunito";
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+  &__body {
+    padding: 0.5rem 0;
+    color: $brown-pod;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+  }
+}
+
+.review-section {
+  padding-top: 1rem;
+
+  &__title {
+    color: $brown-pod;
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  &__subtitle {
+    padding: 0.5rem 0;
+    color: $brown-pod;
+    font-family: "Nunito";
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+  &__body {
+    padding: 0.5rem 0;
+    color: $brown-pod;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    &--date {
+      padding: 0.5rem 0;
+      color: $solid-pink;
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 0.8125rem;
+      line-height: 1.125rem;
+    }
+  }
+}

@@ -8,7 +8,7 @@ function BookingsPage() {
   return (
     <>
       <main className="booking-main-content">
-        <h1 className="booking-main-content-title">Active Bookings</h1>
+        <h1 className="booking-main-content__title">Active Bookings</h1>
         <BookingsList />
       </main>
     </>
