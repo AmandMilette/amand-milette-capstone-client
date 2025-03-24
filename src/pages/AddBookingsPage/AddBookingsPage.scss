@@ -1,2 +1,15 @@
 @use "/src/styles/partials/variables" as *;
 @use "/src/styles/partials/mixins" as *;
+
+.booking-main-content {
+  padding: 1rem;
+  &__title {
+    font-family: "Nunito";
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem;
+    align-self: center;
+  }
+}

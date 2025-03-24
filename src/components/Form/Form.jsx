@@ -126,7 +126,9 @@ function Form() {
             <option value="Boarding">Boarding</option>
             <option value="House Sitting">House Sitting</option>
           </select>
-          <button type="submit">Add Booking</button>
+          <button type="submit" className="booking-form__button">
+            Add Booking
+          </button>
         </form>
       </div>
     </>
