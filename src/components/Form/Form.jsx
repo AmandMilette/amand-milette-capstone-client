@@ -69,7 +69,6 @@ function Form() {
   return (
     <>
       <div>
-        <h2>Form</h2>
         <form className="booking-form" onSubmit={handleSubmit}>
           <input
             type="text"

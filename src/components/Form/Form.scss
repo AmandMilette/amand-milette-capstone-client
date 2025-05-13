@@ -10,8 +10,8 @@
   padding: 1rem 0 1rem 0;
 
   &__text {
-    background-color: $dutch-white;
-    color: $brown-pod;
+    background-color: $cream;
+    color: $kobicha;
     font-family: "Roboto";
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
@@ -19,8 +19,8 @@
   &__button {
     display: flex;
     justify-content: center;
-    color: $dutch-white;
-    background-color: $astral;
+    color: $cream;
+    background-color: $dark-green;
     font-weight: 700;
     font-size: 0.625rem;
     line-height: 1.25rem;
@@ -28,8 +28,8 @@
     border-radius: 0.5rem;
     font-family: "Roboto";
     &:hover {
-      color: $astral;
-      background-color: $dutch-white;
+      color: $dark-green;
+      background-color: $cream;
     }
   }
 }

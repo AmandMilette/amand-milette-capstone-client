@@ -3,9 +3,9 @@
 
 .booking-list-item {
   padding: 1rem;
-  border-top: 3px solid $solid-pink;
+  border-top: 3px solid $dark-cyan;
   &__description {
-    color: $brown-pod;
+    color: $kobicha;
     font-size: 0.8125rem;
     line-height: 1.125rem;
     font-weight: 400;
@@ -17,14 +17,14 @@
   display: flex;
   justify-content: space-between;
   &__date {
-    color: $brown-pod;
+    color: $kobicha;
     font-size: 0.8125rem;
     line-height: 1.125rem;
     font-weight: 700;
     font-family: "Roboto";
   }
   &__name {
-    color: $solid-pink;
+    color: $dark-green;
     font-size: 0.8125rem;
     line-height: 1.125rem;
     font-weight: 700;
