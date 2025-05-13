@@ -2,7 +2,8 @@
 @use "/src/styles/partials/mixins" as *;
 
 body {
-  background-color: $tumbleweed;
+  // background-color: $tumbleweed;
+  background-color: $celadon;
 }
 
 .booking-main-content {
@@ -15,6 +16,7 @@ body {
     text-align: center;
     padding: 1rem;
     align-self: center;
-    color: $brown-pod;
+    // color: $brown-pod;
+    color: $kobicha;
   }
 }
