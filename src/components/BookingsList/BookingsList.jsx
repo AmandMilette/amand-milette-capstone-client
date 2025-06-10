@@ -31,8 +31,8 @@ function BookingsList() {
           </Link>
         ))}
       </ul>
-      <Link to={"/bookings/add"} className="create-booking-button">
-        <p className="create-booking-button__text">Create a Booking</p>
+      <Link to={"/services/book"} className="create-booking-button">
+        <p className="create-booking-button__text">Confirm Booking</p>
       </Link>
     </>
   );

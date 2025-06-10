@@ -16,6 +16,15 @@
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
   }
+
+  &__placeholder {
+    color: $dark-cyan;
+    font-family: "Roboto";
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+  }
+
   &__button {
     display: flex;
     justify-content: center;
@@ -33,3 +42,13 @@
     }
   }
 }
+
+// ::placeholder {
+//   color: red;
+//   opacity: 1; /* Firefox */
+// }
+
+// ::-ms-input-placeholder {
+//   /* Edge 12 -18 */
+//   color: red;
+// }

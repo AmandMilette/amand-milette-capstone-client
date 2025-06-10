@@ -73,7 +73,7 @@ function Form() {
           <input
             type="text"
             name="pet_name"
-            placeholder="Enter your pet's name"
+            placeholder="Enter Your Pet's Name"
             value={petName}
             onChange={handlePetNameChange}
             className="booking-form__text"
@@ -81,14 +81,14 @@ function Form() {
           <input
             type="text"
             name="owner_name"
-            placeholder="Enter your name"
+            placeholder="Enter Your Name"
             value={ownerName}
             onChange={handleOwnerNameChange}
             className="booking-form__text"
           ></input>
           <textarea
             name="description"
-            placeholder="Enter pet care instructions"
+            placeholder="Enter Pet Care Instructions"
             value={description}
             onChange={handleDescriptionChange}
             className="booking-form__text"
@@ -99,11 +99,20 @@ function Form() {
             onChange={handlePetTypeChange}
             className="booking-form__text"
           >
-            <option value="" disabled selected>
-              Select a pet type
+            <option
+              value=""
+              disabled
+              selected
+              className="booking-form__placeholder"
+            >
+              Select A Pet Type
             </option>
-            <option value="Cat">Cat</option>
-            <option value="Dog">Dog</option>
+            <option value="Cat" className="booking-form__placeholder">
+              Cat
+            </option>
+            <option value="Dog" className="booking-form__placeholder">
+              Dog
+            </option>
           </select>
           <input
             type="date"
@@ -118,12 +127,23 @@ function Form() {
             onChange={handleCategoryChange}
             className="booking-form__text"
           >
-            <option value="" disabled selected>
-              Select a service
+            <option
+              value=""
+              disabled
+              selected
+              className="booking-form__placeholder"
+            >
+              Select A Service
             </option>
-            <option value="Day Care">Day Care</option>
-            <option value="Boarding">Boarding</option>
-            <option value="House Sitting">House Sitting</option>
+            <option value="Day Care" className="booking-form__placeholder">
+              Day Care
+            </option>
+            <option value="Boarding" className="booking-form__placeholder">
+              Boarding
+            </option>
+            <option value="House Sitting" className="booking-form__placeholder">
+              House Sitting
+            </option>
           </select>
           <button type="submit" className="booking-form__button">
             Add Booking
