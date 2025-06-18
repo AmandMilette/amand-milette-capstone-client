@@ -4,13 +4,14 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import BookingsPage from "./pages/BookingsPage/BookingsPage";
+
 import AddBookingsPage from "./pages/AddBookingsPage/AddBookingsPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 
 import "../src/App.scss";
+import ServicesPage from "./pages/ServicesPage/ServicesPage";
 
 function App() {
   return (
@@ -19,16 +20,9 @@ function App() {
         <div className="main__container">
           <NavBar />
           <Routes>
-            <Route path="/" element={<Navigate to="/bookings" />} />
-            <Route path="/bookings" element={<BookingsPage />} />
-            <Route
-              path="/bookings/:id"
-              element={<>ToDo:BookingsDetailsPage</>}
-            />
-            {/* <Route
-              path="/bookings/:id/edit"
-              element={<>ToDo:EditBookingsPage</>}
-            /> nice to have */}
+            <Route path="/" element={<Navigate to="/services" />} />
+            <Route path="/services" element={<ServicesPage />} />
+
             <Route path="/bookings/add" element={<AddBookingsPage />} />
             <Route path="/about" element={<AboutPage />} />
 
