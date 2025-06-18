@@ -7,7 +7,7 @@ function AddBookingsPage() {
   return (
     <>
       <main className="booking-main-content">
-        <h1 className="booking-main-content__title">Add a Booking</h1>
+        <h1 className="booking-main-content__title">Book With Me</h1>
         <Form />
       </main>
     </>

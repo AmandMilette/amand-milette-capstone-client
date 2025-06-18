@@ -30,14 +30,14 @@ function Form() {
   function handleCategoryChange(e) {
     setCategory(e.target.value);
   }
-
-  async function postBooking(newBooking) {
-    try {
-      const response = await axios.post(`${API_URL}/bookings`, newBooking);
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  //remove the postBooking function to help seperate back end I don't need to front end
+  // async function postBooking(newBooking) {
+  //   try {
+  //     const response = await axios.post(`${API_URL}/bookings`, newBooking);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
 
   async function handleSubmit(e) {
     e.preventDefault();
