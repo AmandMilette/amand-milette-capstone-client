@@ -2,17 +2,17 @@
 
 import BookingsList from "../../components/BookingsList/BookingsList";
 
-import "./BookingsPage.scss";
+import "./ServicesPage.scss";
 
-function BookingsPage() {
+function ServicesPage() {
   return (
     <>
       <main className="booking-main-content">
-        <h1 className="booking-main-content__title">Active Bookings</h1>
+        <h1 className="booking-main-content__title">Services</h1>
         <BookingsList />
       </main>
     </>
   );
 }
 
-export default BookingsPage;
+export default ServicesPage;

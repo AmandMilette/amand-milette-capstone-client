@@ -28,7 +28,7 @@ function Footer() {
           />
         </section>
         <section className="footer-navbar__copyright">
-          <p>© 2024 Snaps</p>
+          <p>© 2025 Comfort Companions Pet Care</p>
           <p>Terms</p>
           <p>Privacy</p>
           <p>Cookies</p>

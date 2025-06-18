@@ -14,8 +14,8 @@ function NavBar() {
           />
         </Link>
         <div className="page-links">
-          <Link to="/bookings" className="page-links__link">
-            <p>Bookings</p>
+          <Link to="/services" className="page-links__link">
+            <p>Services</p>
           </Link>
           <Link to="/about" className="page-links__link">
             <p>About</p>
