@@ -9,6 +9,7 @@ function ServicesPage() {
     <>
       <main className="booking-main-content">
         <h1 className="booking-main-content__title">Services</h1>
+        {/* Include Services Descriptions & Prices sections here */}
 
         <Form />
         {/* <BookingsList /> */}
