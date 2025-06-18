@@ -7,7 +7,7 @@
 
 /* navbar section */
 .footer-navbar {
-  background-color: #34180d;
+  background-color: $kobicha;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -28,7 +28,7 @@
   &__title {
     flex: 1;
     font-family: "Nunito";
-    color: $dutch-white;
+    color: $cream;
   }
 
   &__social {
@@ -58,7 +58,7 @@
   }
 
   &__copyright {
-    color: $solid-pink;
+    color: $dark-green;
     font-family: "Roboto";
     font-size: 0.625rem;
     line-height: 0.75rem;
